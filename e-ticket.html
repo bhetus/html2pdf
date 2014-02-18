@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nepflights E-ticket</title>
+        <style>
+            /*Nep-flight Sample e-Ticket*/
+
+            html, body, div, span, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            abbr, address, cite, code,
+            del, dfn, em, img, ins, kbd, q, samp,
+            small, strong, sub, sup, var,
+            b, i,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td {
+                margin:0;
+                padding:0;
+                border:0;
+                outline:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+
+            body {
+                margin:0;
+                padding:0;
+                font:12px/15px "Helvetica Neue",Arial, Helvetica, sans-serif;
+/*                font-family: Deja Vu Sans; */
+                color: #555;
+                background:#f5f5f5 url(bg.jpg);
+            }
+
+            a {color:#666;}
+
+            #content {width:600px;margin:20px auto;}
+
+
+            table {
+                overflow:hidden;
+                border:1px solid #aaa;
+                background:#fefefe;
+                width:100%;
+                float:left;
+                margin:10px auto;
+                /* -moz-border-radius:5px; 
+                -webkit-border-radius:5px; 
+                border-radius:5px; */
+                -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            }
+
+            th, td {padding:18px 28px 18px; text-align:center; }
+
+            th {padding-top:22px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
+
+            td {border-top:1px solid #aaa; border-right:1px solid #aaa;}
+
+            tr.odd-row td {background:#f6f6f6;}
+
+            td.first, th.first {text-align:left}
+
+            td.last {border-right:none;}
+
+
+            td {
+                background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+                background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
+            }
+
+            tr.odd-row td {
+                background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+                background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
+            }
+
+            th {
+                background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+                background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+            }
+
+
+            tr:first-child th.first {
+                -moz-border-radius-topleft:5px;
+                -webkit-border-top-left-radius:5px; /* Saf3-4 */
+            }
+
+            tr:first-child th.last {
+                -moz-border-radius-topright:5px;
+                -webkit-border-top-right-radius:5px; /* Saf3-4 */
+            }
+
+            tr:last-child td.first {
+                -moz-border-radius-bottomleft:5px;
+                -webkit-border-bottom-left-radius:5px; /* Saf3-4 */
+            }
+
+            tr:last-child td.last {
+                -moz-border-radius-bottomright:5px;
+                -webkit-border-bottom-right-radius:5px; /* Saf3-4 */
+            }
+
+            h2{float:left;text-align:left;width:100%;margin-top:10px;background:url(assets/bullet.png) no-repeat;padding-left:20px;margin-left:10px;}
+            #title{font-size:4.5em;text-decoration:none;font-family:arial;padding:20px 30px 30px 0px;margin-left:0px;font-weight:normal;float:left;}
+            .top_content{float:left;width:300px;border-left:1px solid #ccc;padding:0px 20px 5px 20px;margin-top:10px;height:50px;line-height:2;}
+            #air-img{height:7px;width:30px;}
+            .footer{float:left;width:100%;border-top:2px solid #fff;padding-top:5px;text-align:left;padding-bottom:10px;}
+            .footer p{text-align:center;}
+            .footer #terms{border-bottom:5px solid #ccc;padding-bottom:10px;margin-bottom:10px;text-align:left;}
+        </style>
+    </head>
+    <body>
+
+        <div id="content">
+            <img src="assets/logo.png" style="float:right; height:66px;margin-left:200px;">
+             <img src="assets/qr-code.png" style="float:right; height:66px;"> 
+
+            <h1 id="title">e-Ticket</h1>
+            <div class="top_content">Issued Date : 2014-12-04<br>
+                Issued by : Nepflights.com
+            </div>
+            <h2>Booking Details :</h2>
+            <table cellspacing="0">
+                <tr><th>PNR</th><th>Place</th><th>Airline</th><th>Date</th></tr>
+                <tr><td>5000</td><td>Kathmandu-Lukla</td><td><div id="air-img"><img src="assets/yeti-logo.png"></div>Yeti Airlines</td><td>2014-01-24</td></tr>
+            </table> 
+
+            <h2>Passenger Details :</h2>
+            <table cellspacing="0">
+                <tr><th>Passenger Name</th><th>Eticket Number</th></tr>
+                <tr><td>Mr Swagat Bhetuwal</td><td>NEPFLT5512</td></tr>
+            </table>
+
+            <h2>Itinerary Details :</h2>
+            <table cellspacing="0">
+                <tr><th>Flight</th><th>Departure</th><th>Arrival</th><th>Class</th><th>Status</th></tr>
+                <tr><td>5000</td><td>Kathmandu-Lukla</td><td>Yeti Airlines</td><td>2014-01-24</td><td>Engaged</td></tr>
+                <tr><th>Luggage Status</th><th>Other Detail</th><th colspan="4"></th></tr>
+                <tr><td colspan="1">Allowed</td><td colspan="4" style="text-align:left;">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the of Lorem Ipsum.</td></tr>
+            </table>
+
+            <h2>Fare Details :</h2>
+            <table cellspacing="0">
+                <tr><th>Tax</th><th>Fee</th><th>Total Cost</th><th>Class</th><th>Status</th></tr>
+                <tr><td>5000</td><td>5000</td><td>500000</td><td>A</td><td>Engaged</td></tr>
+            </table>
+
+            <h2>Payment Details :</h2>
+            <table cellspacing="0">
+                <tr><th>Card</th><th>Paypal</th><th>Esewa</th><th>Visa</th><th>iPAY</th></tr>
+                <tr><td>&#x2717;</td><td>&#x2717;</td><td>&#x2713;</td><td>&#x2717;</td><td>&#x2717;</td></tr>
+            </table>
+            <div class="footer">
+                <p id="terms"><b>Terms of Contract :</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>&#169; Copyright, Allright Reserved . Nepflights.com</p>
+                <div>
+                </div>
+
+                </body>
+                </html>
